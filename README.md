@@ -1,4 +1,4 @@
-# Major Mode of KonohaScript
+# Emacs Major Mode of KonohaScript
 
 ## Introduction
 
