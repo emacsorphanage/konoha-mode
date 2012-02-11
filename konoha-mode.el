@@ -57,7 +57,8 @@
 (defvar konoha-builtin-func-regexp
   (regexp-opt
    '("print" "typeof" "defined" "using" "import" "typeof" "assert"
-    "format" "new")))
+    "format" "new")
+   'words))
 
 ;; Data type
 (defvar konoha-type-regexp
@@ -65,7 +66,8 @@
    '("int" "Int" "Integer" "char" "short" "long" "byte"
      "float" "double" "Float" "Bytes" "String" "Array" "Map"
      "Set" "Object" "Tuple" "Regex" "boolean" "Boolean"
-     "void" "dyn" "var" "Func")))
+     "void" "dyn" "var" "Func")
+   'words))
 
 ;; keywords
 (defvar konoha-structure-keywords
@@ -107,7 +109,7 @@
 (defvar konoha-mode-hook nil
   "A hook for you to run your own code when the mode is loaded")
 
-(define-derived-mode konoha-mode c-mode
+(define-derived-mode konoha-mode java-mode
   "Konoha"
   "Major mode for editing konohascript."
 
